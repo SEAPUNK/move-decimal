@@ -123,6 +123,10 @@ test('leading and trailing zeroes 2', t => {
   t.is(moveDecimal('00.00', 0), '0')
 })
 
+test('just the dot', t => {
+  t.is(moveDecimal('.', 0), '0')
+})
+
 test('works for negative numbers (all previous tests, just with negative input number', t => {
   t.is(moveDecimal('-1.44', 1), '-14.4')
   t.is(moveDecimal('-14.4', -1), '-1.44')
@@ -139,4 +143,5 @@ test('works for negative numbers (all previous tests, just with negative input n
   t.is(moveDecimal('-1.10', 0), '-1.1')
   t.is(moveDecimal('-01.2', 0), '-1.2')
   t.is(moveDecimal('-0.2', 0), '-0.2')
+  t.is(moveDecimal('-.', 0), '-0')
 })

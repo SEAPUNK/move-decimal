@@ -17,6 +17,11 @@ import moveDecimal from 'move-decimal'
 
 // requires a number in string form
 // returns a number in string form
-moveDecimal('4.33', 2) // '433'
-moveDecimal('-2.1', -1) // '-0.21'
+moveDecimal('4.3300', 2) // '433'
+moveDecimal('-02.1', -1) // '-0.21'
+
+// you could also use this to convert number inputs to a parseable number
+moveDecimal('1.', 0) // 1
+moveDecimal('.', 0) // 0
+moveDecimal('.1', 0) // 0.1
 ```

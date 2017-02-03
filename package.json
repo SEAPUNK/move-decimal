@@ -1,7 +1,7 @@
 {
   "name": "move-decimal",
   "version": "0.0.0",
-  "description": "Move decimal point in numbers that are in string format. Useful for floating-point arithmetic.",
+  "description": "Move the decimal point in a number string forwards or backwards. Useful with floating-point numbers.",
   "main": "lib/index.js",
   "scripts": {
     "test": "standard && nyc ava"
