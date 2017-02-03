@@ -1,0 +1,30 @@
+{
+  "name": "move-decimal",
+  "version": "0.0.0",
+  "description": "Move decimal point in numbers that are in string format. Useful for floating-point arithmetic.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "standard && nyc ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/SEAPUNK/move-decimal"
+  },
+  "keywords": [
+    "move",
+    "decimal",
+    "point"
+  ],
+  "author": "Ivan K <ivan@sq10.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SEAPUNK/move-decimal/issues"
+  },
+  "homepage": "https://github.com/SEAPUNK/move-decimal#readme",
+  "devDependencies": {
+    "ava": "^0.18.0",
+    "coveralls": "^2.11.15",
+    "nyc": "^10.1.2",
+    "standard": "^8.6.0"
+  }
+}
